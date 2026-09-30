@@ -7,8 +7,9 @@ open System.Collections.Generic
 open Microsoft.FSharp.Core
 open Microsoft.FSharp.Collections
 
-/// <summary>Immutable maps based on binary trees, where keys are ordered by F# generic comparison. By default
-/// comparison is the F# structural comparison function or uses implementations of the IComparable interface on key values.</summary>
+/// <summary>Immutable maps based on hash tries, where keys are located by F# generic hashing and are ordered
+/// by F# generic comparison whenever the map is enumerated or traversed. By default comparison is the F# structural
+/// comparison function or uses implementations of the IComparable interface on key values.</summary>
 ///
 /// <remarks>See the <see cref="T:Microsoft.FSharp.Collections.MapModule"/> module for further operations on maps.
 ///
